@@ -1,0 +1,250 @@
+html {
+    background-color: white;
+}
+
+    body {
+    min-height: 100vh;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-nav-hover-Color : orange;
+    --main-sbar-hover-Color: hsl(35, 77%, 62%);
+    --main-box-hover-Color: hsl(5, 85%, 63%);
+    --main-p-Color: rgba(255, 255, 255, 0.701);
+}
+
+.inter-300-15 {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.inter-400-15 {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.inter-400-17 {
+    font-family: inter;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.inter-700-20 {
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.inter-800-30 {
+    font-family: inter;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/*components*/
+.sidebar-header {
+    font-size: 40px;
+    font-family: inter;
+    font-weight: 600;
+    margin-block-end: 20px;
+    color: hsl(35, 77%, 62%);;
+}
+
+.uni-logo {
+    background-image: url(..//front-end-mentor/images/logo.svg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 50px;
+}
+
+#uni-nav {
+    display: flex;
+    width: inherit;
+    height: auto;
+    justify-content: space-between;
+    margin-block-end: 40px;
+}
+
+#uni-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-inline-end: 25px;
+}
+
+#uni-nav li:nth-of-type(5) {
+    margin-inline-end: 0;
+}
+
+#uni-nav li a:hover {
+    cursor: pointer;
+    color: var(--main-nav-hover-Color);
+}
+
+#uni-nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+#uni-main {
+    width: 100%;
+    height: inherit;
+}
+
+#container {
+    display: flex;
+    width: inherit;
+    height: 500px;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 67%;*/
+    flex-grow: 1;
+    width: 700px;
+    height: inherit;
+    margin-inline-end: 3%;
+}
+
+.main-img {
+    /*background-image: url(..//front-end-mentor/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    width: 100%;
+    height: 280px;
+}
+
+.sidebar-outer {
+    width: 330px;
+    height: inherit;
+}
+
+.sidebar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(240, 100%, 5%);
+    width: 100%;
+    height: inherit;
+    padding-inline: 7%;
+    padding-block: 8%;
+}
+
+.sidebar-inner p {
+    color: var(--main-p-Color);
+    margin-block-end: 60px;
+}
+
+.sidebar-inner h2 {
+    font-family: inter;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    margin-block-end: 15px;
+}
+
+.sidebar-inner h2:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);;
+}
+
+.hor-line {
+    position: relative;
+    content: "";
+}
+
+.hor-line p::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.374);
+    bottom: 30px;
+}
+
+.below-pic {
+    width: 300px;
+    margin-inline-end: 30px;
+    line-height: 45px;
+}
+
+.below-pic2 {
+    width: 330px;
+}
+
+.below-pic2 p {
+    margin-block-end: 25px;
+}
+
+.btn {
+    background-color: tomato;
+    width: 170px;
+    height: 40px;
+    letter-spacing: 2.5px;
+    color: whitesmoke;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: 200px;
+    align-content: center;
+}
+
+#container2 div {
+    display: flex;
+    width: 32%;
+    height: 130px;
+    margin-inline-end: 20px;
+}
+
+#container2 div img,
+#container2 div .img {
+    width: 100px;
+    height: inherit;
+}
+
+#container2 h1 {
+    opacity: 0.3;
+    margin-block-end: 5px;
+}
+
+#container2 h2 {
+    font-size: 16px;
+    margin-block-end: 5px;
+}
+
+#container2 p {
+    line-height: 23px;
+}
+
+#container2 .header-width {
+    width: 250px;
+}
+
+#container2 h2:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+#container2 div:nth-of-type(3) {
+    margin-inline-end: 0;
+}
